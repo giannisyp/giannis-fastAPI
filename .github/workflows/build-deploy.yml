@@ -3,7 +3,7 @@ name: Build and Deploy Code
 on: [push,pull_request]
 
 jobs:
-  job1: windows-latest
+  job1: ubuntu-latest
   steps:
     -name: pulling git repo
       - name: pulling git repo
