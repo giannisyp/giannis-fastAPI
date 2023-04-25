@@ -12,6 +12,8 @@ This route is about likes or vote system and this route contain code for upvote 
 
 ## Api has tests for all the functions 
 
+## Postgresql is being used 
+
 ## Best practices for scaling the API 
 
 ## Runs a CI/CD pipeline 
