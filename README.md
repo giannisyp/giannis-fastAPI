@@ -1,4 +1,4 @@
-# Backend clone of social media app by using FastAPI
+# Backend clone of chat room app by using FastAPI
 
 This API has 4 routes
 
