@@ -16,7 +16,7 @@ This route is about login system
 
 ## 4) Vote route
 
-This route is about likes or vote system and this route contain code for upvote or back vote there is not logic about down vote
+This route is about the votes system and contains code for upvote or back-vote there is no logic about down vote
 
 ## How to run locally
 
