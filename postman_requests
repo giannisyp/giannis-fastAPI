@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "f0919183-54a6-4afd-a87a-4fb8889a15fb",
+		"name": "fastAPI-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Posts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2ODIxOTM1MDB9.SgDd2ND34R22W6juhOOVancQBbo4iMnXlF-49Dbgs9E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMSwiZXhwIjoxNjgxNjY2NTEwfQ.YL1v3bIrbSn2NtEc8yU1MIaFg-oJytp1souIJGBpc88",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}posts",
+					"host": [
+						"{{URL}}posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMSwiZXhwIjoxNjgxNjY2MTk3fQ.DeR_dBKXHdwFDEqHQ8diB8YEYYXUBAX68zbdi8bjGRg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"WELCOME TO GIANNIS LAND\",\r\n    \"content\": \"GIANNIS GIANNIS GIANNIS\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}posts",
+					"host": [
+						"{{URL}}posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMSwiZXhwIjoxNjgxNjY2NTEwfQ.YL1v3bIrbSn2NtEc8yU1MIaFg-oJytp1souIJGBpc88",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{URL}}posts/2",
+					"host": [
+						"{{URL}}posts"
+					],
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMSwiZXhwIjoxNjgxNjY2NTEwfQ.YL1v3bIrbSn2NtEc8yU1MIaFg-oJytp1souIJGBpc88",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{URL}}posts/11",
+					"host": [
+						"{{URL}}posts"
+					],
+					"path": [
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMSwiZXhwIjoxNjgxNjY2NTEwfQ.YL1v3bIrbSn2NtEc8yU1MIaFg-oJytp1souIJGBpc88",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"updated title\",\r\n    \"content\": \"This is the updated content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}posts/8",
+					"host": [
+						"{{URL}}posts"
+					],
+					"path": [
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}sqlalchemy",
+					"host": [
+						"{{URL}}sqlalchemy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"giannis1234@gmail.com\",\r\n    \"password\": \"lidhs\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}users",
+					"host": [
+						"{{URL}}users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}users/3",
+					"host": [
+						"{{URL}}users"
+					],
+					"path": [
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"JWT\",pm.response.json().access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "giannis@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "lidhs",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}}login/",
+					"host": [
+						"{{URL}}}login"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vote",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"post_id\" : 1,\r\n    \"dir\": 1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}vote",
+					"host": [
+						"{{URL}}vote"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
